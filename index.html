@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utsav Gyawali</title>
+<meta name="description" content="Utsav Gyawali, PhD — neuroscientist at the Rutgers Brain Health Institute studying sleep, the orexin system, and relapse in addiction.">
+<meta property="og:title" content="Utsav Gyawali, PhD — Neuroscience of sleep, orexin, and addiction">
+<meta property="og:description" content="Postdoctoral Associate at the Rutgers Brain Health Institute. I study why sleep falls apart during drug abstinence, and whether that is a symptom of relapse risk or a cause of it.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf8; --surface:#ffffff; --ink:#15171a; --ink-2:#4a5058; --ink-3:#787f88;
+  --line:#e3e0da; --accent:#8a4b2a; --accent-soft:#f3ebe4; --band:#15171a; --band-ink:#f3f1ed;
+  --max:880px;
+}
+:root:not([data-theme="light"]){
+  @media (prefers-color-scheme: dark){
+    --bg:#121316; --surface:#1a1c20; --ink:#f0eee9; --ink-2:#b9bec6; --ink-3:#878d96;
+    --line:#2b2e34; --accent:#e0a179; --accent-soft:#2a2320; --band:#000; --band-ink:#f0eee9;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121316; --surface:#1a1c20; --ink:#f0eee9; --ink-2:#b9bec6; --ink-3:#878d96;
+  --line:#2b2e34; --accent:#e0a179; --accent-soft:#2a2320; --band:#000; --band-ink:#f0eee9;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 17px/1.65 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 16px}
+a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+a:hover{border-bottom-color:var(--accent)}
+h1,h2,h3{font-family:Fraunces, Georgia, serif; font-weight:600; letter-spacing:-.01em; line-height:1.2; margin:0}
+h2{font-size:clamp(1.35rem,3.2vw,1.65rem); margin-bottom:.6rem}
+h3{font-size:1.05rem; font-family:Inter,sans-serif; font-weight:600; margin:0 0 .35rem}
+p{margin:0 0 1rem}
+section{padding:clamp(2.4rem,6vw,3.6rem) 0; border-top:1px solid var(--line)}
+.eyebrow{font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 .9rem; font-weight:600}
+
+/* hero */
+.hero{padding:clamp(2.6rem,7vw,4.4rem) 0 clamp(2rem,5vw,3rem); border-top:0}
+.hero-grid{display:grid; grid-template-columns:168px 1fr; gap:clamp(1.3rem,4vw,2.2rem); align-items:start}
+.portrait{width:168px; height:200px; object-fit:cover; object-position:50% 18%; border-radius:4px; border:1px solid var(--line); display:block}
+.hero h1{font-size:clamp(2rem,6vw,2.9rem)}
+.role{color:var(--ink-2); margin:.5rem 0 1.1rem; font-size:1.02rem}
+.role span{display:block}
+.lede{font-size:clamp(1.05rem,2.6vw,1.18rem); color:var(--ink); max-width:46ch}
+.links{display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.3rem; padding:0; list-style:none}
+.links a{
+  display:inline-block; padding:.42rem .85rem; border:1px solid var(--line); border-radius:999px;
+  font-size:.88rem; color:var(--ink-2); background:var(--surface); border-bottom:1px solid var(--line);
+}
+.links a:hover{border-color:var(--accent); color:var(--accent)}
+
+/* research */
+.fig{margin:0 0 1.8rem}
+.fig img{width:100%; max-width:430px; border-radius:4px; display:block; background:#000}
+.fig figcaption{font-size:.84rem; color:var(--ink-3); margin-top:.55rem; max-width:52ch; line-height:1.5}
+.threads{display:grid; gap:1.5rem}
+@media(min-width:720px){ .threads{grid-template-columns:1fr 1fr; gap:2rem} }
+.thread p:last-child{margin-bottom:0}
+.thread p{color:var(--ink-2); font-size:.97rem}
+
+/* band */
+.band{background:var(--band); color:var(--band-ink); border-top:0}
+.band h2{color:var(--band-ink)}
+.band .eyebrow{color:color-mix(in srgb, var(--band-ink) 55%, transparent)}
+.band p{color:color-mix(in srgb, var(--band-ink) 80%, transparent)}
+.band a{color:#e0a179}
+
+/* video */
+.videos{display:grid; gap:1.4rem}
+@media(min-width:720px){ .videos{grid-template-columns:1fr 1fr; gap:1.6rem} }
+.vid{aspect-ratio:16/9; width:100%; border:0; border-radius:4px; background:#000; display:block}
+.vcap{font-size:.9rem; margin:.6rem 0 0; line-height:1.5}
+.vcap strong{display:block; font-weight:600; color:var(--band-ink)}
+
+/* lists */
+.items{list-style:none; margin:0; padding:0}
+.items li{padding:.85rem 0; border-bottom:1px solid var(--line); display:grid; grid-template-columns:1fr auto; gap:.3rem 1.2rem; align-items:baseline}
+.items li:last-child{border-bottom:0}
+.items .yr{color:var(--ink-3); font-size:.84rem; font-variant-numeric:tabular-nums; white-space:nowrap}
+.items .meta{grid-column:1/-1; color:var(--ink-3); font-size:.86rem; margin:0}
+.pubs{list-style:none; margin:0; padding:0}
+.pubs li{padding:.8rem 0; border-bottom:1px solid var(--line); font-size:.94rem; color:var(--ink-2); line-height:1.55}
+.pubs li:last-child{border-bottom:0}
+.pubs b{color:var(--ink); font-weight:600}
+.note{font-size:.9rem; color:var(--ink-3); margin-top:1.2rem}
+
+footer{border-top:1px solid var(--line); padding:2.4rem 0 3rem; color:var(--ink-3); font-size:.9rem}
+footer a{color:var(--ink-2)}
+
+@media(max-width:560px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{width:132px; height:158px}
+  .items li{grid-template-columns:1fr}
+  .items .yr{order:-1}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img class="portrait" src="images/headshot.jpg" alt="Utsav Gyawali">
+    <div>
+      <h1>Utsav Gyawali, PhD</h1>
+      <div class="role">
+        <span>Postdoctoral Associate &amp; Scientific Writer</span>
+        <span>Brain Health Institute &middot; Department of Psychiatry</span>
+        <span>Rutgers Robert Wood Johnson Medical School</span>
+      </div>
+      <p class="lede">I study why sleep falls apart when people stop using drugs &mdash; and whether broken sleep is a cause of relapse or a symptom of the same thing that drives it.</p>
+      <ul class="links">
+        <li><a href="https://scholar.google.com/citations?user=lSRvFqYAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#recognition">Recognition</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="mailto:UG40@rwjms.rutgers.edu">UG40@rwjms.rutgers.edu</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section id="purpose">
+  <div class="wrap">
+    <p class="eyebrow">Purpose</p>
+    <h2>One overactive brain system, two problems</h2>
+    <p>More than two-thirds of people who try to quit cocaine use again within a month. Almost all of them sleep badly while they try, and the worse they sleep, the more likely they are to relapse. The field has long read that as a chain of events: sleep breaks down, self-control weakens, relapse follows. Treat the insomnia and you protect the recovery.</p>
+    <p>Nobody had tested it. That is the question I came to Rutgers to answer, and the answer my data point toward is a different one &mdash; that the broken sleep and the pull back toward the drug are two outputs of a single overactive system in the brain, not a cause and its consequence.</p>
+    <p>It matters because it changes what you treat. There is no approved medication for cocaine use disorder. If the sleep loss and the relapse risk share an upstream driver, then a drug that reaches that driver should move both at once &mdash; and drugs that do are already sitting on pharmacy shelves, approved for insomnia. If instead sleep loss is the cause, any good sleeping pill would do. Those two accounts predict different clinics, and they are separable in the lab.</p>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <p class="eyebrow">Research</p>
+    <h2>What I work on</h2>
+    <figure class="fig">
+      <img src="images/orexin-lh.png" alt="Fluorescence microscopy image of orexin neurons in the rat lateral hypothalamus. Green orexin cells, red receptor label, and yellow overlap cluster around the fornix.">
+      <figcaption>Orexin neurons in the rat lateral hypothalamus, the small cell population at the center of this work. Green marks the orexin-producing cells; red marks an engineered receptor that lets those cells be switched off on command; yellow is where the two overlap. The dashed circle marks the fornix (f).</figcaption>
+    </figure>
+    <div class="threads">
+      <div class="thread">
+        <h3>Sleep, orexin, and relapse</h3>
+        <p>Orexin is a signaling molecule made by a few thousand neurons in the hypothalamus. The same cells hold the brain awake and push animals toward things they want. Cocaine makes them more numerous and more active.</p>
+        <p>I ask whether that overactivity explains the fragmented sleep of early abstinence, the drug seeking, or both &mdash; using continuous sleep recording in rats, drugs that block orexin receptors, and genetic tools that switch off orexin neurons specifically while leaving the rest of the brain alone.</p>
+      </div>
+      <div class="thread">
+        <h3>Orexin and binge eating</h3>
+        <p>The same circuitry shapes how rewarding food feels. In a second line of work I study binge-like eating in female rats and how orexin signaling into the midbrain tracks the shift in what a reward is worth.</p>
+        <p>The aim is to find out how far the framework reaches: whether what holds for a drug also holds for food, and what that says about treating compulsive eating as a problem of reward signaling rather than appetite.</p>
+      </div>
+    </div>
+    <p class="note">Ongoing and unpublished work is described here in outline only. Published papers are listed below and on <a href="https://scholar.google.com/citations?user=lSRvFqYAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>.</p>
+  </div>
+</section>
+
+<section class="band" id="talking">
+  <div class="wrap">
+    <p class="eyebrow">On camera</p>
+    <h2>Talking about the work</h2>
+    <div class="videos">
+      <div>
+        <iframe class="vid" src="https://www.youtube.com/embed/cYP1orYXxy4" title="Utsav Gyawali Shares Insights about SfN's TPDA" loading="lazy" allowfullscreen></iframe>
+        <p class="vcap"><strong>Utsav Gyawali Shares Insights about SfN&rsquo;s TPDA</strong>Society for Neuroscience &middot; on what the Trainee Professional Development Award makes possible for early-career scientists presenting at SfN.</p>
+      </div>
+      <div>
+        <iframe class="vid" src="https://www.youtube.com/embed/IuHY6AjqyvI" title="Growing Through Research Opportunity &amp; Support at Rutgers BHI | Utsav Gyawali, PhD" loading="lazy" allowfullscreen></iframe>
+        <p class="vcap"><strong>Growing Through Research Opportunity &amp; Support at Rutgers BHI</strong>Rutgers Brain Health Institute &middot; on carrying this research to an international meeting in Spain, and why support for trainees is what makes that possible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition">
+  <div class="wrap">
+    <p class="eyebrow">Recognition &amp; coverage</p>
+    <h2>Outside the lab</h2>
+    <ul class="items">
+      <li><span><a href="https://www.rutgers.edu/news/rutgers-brain-health-institute-wins-anthem-award-public-health-education-patient-empowerment">Bronze Anthem Award, Health Education &amp; Patient Empowerment</a></span><span class="yr">2026</span>
+        <p class="meta">International Academy of Digital Arts &amp; Sciences, for <em>Brain Health Insights for You</em> &mdash; team award; contributing writer and content developer. Covered by Rutgers.</p></li>
+      <li><span>Institutional Nominee, Blavatnik Regional Awards for Young Scientists</span><span class="yr">2026</span>
+        <p class="meta">Selected by Rutgers University.</p></li>
+      <li><span>NIH T32 Trainee Award &middot; NIDA</span><span class="yr">2026&ndash;</span>
+        <p class="meta">T32DA055569.</p></li>
+      <li><span>Best Neuroscience Poster Award</span><span class="yr">2026</span>
+        <p class="meta">Rutgers Addiction Research Center Symposium.</p></li>
+      <li><span>Travel Award, Brain Health Institute &middot; Travel Fellowship, Winter Conference on Brain Research</span><span class="yr">2026, 2025</span></li>
+      <li><span>Best Speaker Award, Addiction Neuroscience Australia</span><span class="yr">2024</span></li>
+      <li><span>Global Scholarship Award, American College of Neuropsychopharmacology</span><span class="yr">2024</span></li>
+      <li><span>Trainee Professional Development Award, Society for Neuroscience</span><span class="yr">2023</span></li>
+      <li><span>High-Performance Grand Prize and DEI Award, Nucleate Activator Program</span><span class="yr">2023</span>
+        <p class="meta">Philadelphia Chapter.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="wrap">
+    <p class="eyebrow">Science writing</p>
+    <h2>Explaining brain science to everyone else</h2>
+    <p>Alongside the bench work I write for the Brain Health Institute, translating neuroscience for patients, families, and scientists outside the field. The program this work belongs to, <em>Brain Health Insights for You</em>, won a Bronze Anthem Award in 2026.</p>
+    <ul class="items">
+      <li><span><a href="https://www.rutgers.edu/news/rutgers-researchers-lead-study-tracking-risk-factors-alzheimers-disease-and-dementias-south">Rutgers Researchers Lead Study Tracking Risk Factors for Alzheimer&rsquo;s Disease and Dementias in South Asian Americans</a></span><span class="yr">Rutgers Today</span></li>
+      <li><span><a href="https://brainhealthinstitute.rutgers.edu/2026/11/01/bhi-plenary-seminar-dr-alain-dagher-presents-computational-models-of-neurodegeneration/">Computational models of neurodegeneration &mdash; BHI Plenary Seminar, Dr. Alain Dagher</a></span><span class="yr">2026</span></li>
+      <li><span><a href="https://brainhealthinstitute.rutgers.edu/2026/10/14/nobel-prize-honors-optogenetics-a-light-based-technique-powering-discoveries-at-rutgers/">Nobel Prize honors optogenetics, a light-based technique powering discoveries at Rutgers</a></span><span class="yr">2026</span></li>
+      <li><span><a href="https://brainhealthinstitute.rutgers.edu/2026/09/20/bhi-plenary-seminar-dr-scott-russo-presents-neuroimmune-mechanisms-of-depression/">Neuroimmune mechanisms of depression &mdash; BHI Plenary Seminar, Dr. Scott Russo</a></span><span class="yr">2026</span></li>
+      <li><span><a href="https://brainhealthinstitute.rutgers.edu/2026/09/07/fda-approves-first-drug-to-treat-the-orexin-deficit-in-narcolepsy-type-1/">FDA approves the first drug to treat the orexin deficit in narcolepsy type 1</a></span><span class="yr">2026</span></li>
+      <li><span><a href="https://brainhealthinstitute.rutgers.edu/2026/04/29/opioid-crisis-hits-hardest-in-new-jerseys-most-vulnerable-communities/">Opioid crisis hits hardest in New Jersey&rsquo;s most vulnerable communities</a></span><span class="yr">2026</span></li>
+      <li><span><a href="https://brainhealthinstitute.rutgers.edu/the-hormone-brain-axis-in-women/">The hormone&ndash;brain axis in women</a> &middot; <a href="https://brainhealthinstitute.rutgers.edu/wp-content/uploads/2026/08/R-BHI_Estrogen_Infosheet.pdf">estrogen infosheet (PDF)</a></span><span class="yr">2026</span></li>
+      <li><span><a href="https://brainhealthinstitute.rutgers.edu/resources/insights/games/">Brain health puzzles and games</a></span><span class="yr">ongoing</span>
+        <p class="meta">Public-engagement puzzles built around brain and mental health vocabulary.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <p class="eyebrow">Selected publications</p>
+    <h2>Papers</h2>
+    <ul class="pubs">
+      <li><b>Gyawali, U.</b>, &amp; James, M. H. (2026). Opposing control of dopamine neuron excitability by orexin (hypocretin) receptors 1 and 2. <em>Biological Psychiatry</em>, 100(7), 722&ndash;724. <a href="https://doi.org/10.1016/j.biopsych.2026.07.013">doi</a></li>
+      <li><b>Gyawali, U.</b>, Martin, D. A., Sun, F., Li, Y., &amp; Calu, D. (2023). Dopamine in the dorsal bed nucleus of stria terminalis signals Pavlovian sign-tracking and reward violations. <em>eLife</em>, 12, e81980. <a href="https://doi.org/10.7554/eLife.81980">doi</a></li>
+      <li><b>Gyawali, U.</b>, &amp; James, M. H. (2022). Sleep disturbance in substance use disorders: the orexin (hypocretin) system as an emerging pharmacological target. <em>Neuropsychopharmacology</em>, 47(9), 1687&ndash;1699. <a href="https://doi.org/10.1038/s41386-022-01404-3">doi</a></li>
+      <li><b>Gyawali, U.</b>, &amp; James, M. H. (2022). Orexin (hypocretin) signaling in the basolateral amygdala contributes to individual differences in stress sensitivity. <em>Biological Psychiatry</em>, 91(9), 775&ndash;777. <a href="https://doi.org/10.1016/j.biopsych.2022.02.957">doi</a></li>
+      <li>VanRyzin, J. W., Laraia, G. A., <b>Gyawali, U.</b>, James, M. H., &amp; Reissner, K. J. (2025). Reducing astrocyte calcium in the nucleus accumbens core increases reward valuation. <em>bioRxiv</em>. <a href="https://doi.org/10.1101/2025.10.20.683571">preprint</a></li>
+      <li><b>Gyawali, U.</b>, Martin, D. A., Sulima, A., Rice, K. C., &amp; Calu, D. J. (2020). Role of BNST CRFR1 receptors in incubation of fentanyl seeking. <em>Frontiers in Behavioral Neuroscience</em>, 14, 153. <a href="https://doi.org/10.3389/fnbeh.2020.00153">doi</a></li>
+      <li>Cover, K. K., <b>Gyawali, U.</b>, Kerkhoff, W. G., et&nbsp;al. (2019). Activation of the rostral intralaminar thalamus drives reinforcement through striatal dopamine release. <em>Cell Reports</em>, 26(6), 1389&ndash;1398.e3. <a href="https://doi.org/10.1016/j.celrep.2019.01.044">doi</a></li>
+      <li>Wenzel, J. M., Oleson, E. B., Gove, W. N., Cole, A. B., <b>Gyawali, U.</b>, et&nbsp;al. (2018). Phasic dopamine signals in the nucleus accumbens that cause active avoidance require endocannabinoid mobilization in the midbrain. <em>Current Biology</em>, 28(9), 1392&ndash;1404.e5. <a href="https://doi.org/10.1016/j.cub.2018.03.037">doi</a></li>
+    </ul>
+    <p class="note">Full list, including co-authored work from graduate training, on <a href="https://scholar.google.com/citations?user=lSRvFqYAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Utsav Gyawali, PhD &middot; Brain Health Institute, Rutgers Robert Wood Johnson Medical School, Piscataway, NJ<br>
+    <a href="mailto:UG40@rwjms.rutgers.edu">UG40@rwjms.rutgers.edu</a> &middot; <a href="https://scholar.google.com/citations?user=lSRvFqYAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
